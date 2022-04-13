@@ -27,6 +27,5 @@ yar-error.log*
 .env.production.local
 /src/env.d.ts
 
-Dockerfile
 .dockerignore
 deploy.sh
