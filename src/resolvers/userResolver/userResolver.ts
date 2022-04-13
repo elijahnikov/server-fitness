@@ -286,7 +286,7 @@ export class UserResolver {
         }
 
         const signedRequest = await s3.getSignedUrl('putObject', s3Params)
-        const url = `https://fitnessappstorage.s3.amazonaws.com/${filename}`
+        const url = `https://${process.env.AWS_BUCKET_NAME}.s3.amazonaws.com/${filename}`
 
         return {
             signedRequest,
